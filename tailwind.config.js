@@ -14,15 +14,10 @@ module.exports = {
 			},
 			backgroundImage: {
 				patternBackground:
-					'url(./assets/bg-pattern-top.svg), url(./assets/bg-pattern-bottom.svg)',
-				patternCard: 'url(./assets/bg-pattern-card.svg)'
+					'url(./assets/images/bg-pattern-top-desktop.svg), url(./assets/images/bg-pattern-bottom-desktop.svg)'
 			},
 			backgroundPosition: {
-				patternBackgroundDesktopPosition:
-					'calc(100% - 52vw) calc(100% - 35vh), 48vw 52vh',
-				patternBackgroundMobilePosition:
-					'calc(100% - 40vw) calc(100% - 45vh), 40vw 40vh',
-				patternCardMobilePosition: '-12px 0'
+				patternBackgroundPosition: '0 0, bottom right'
 			}
 		}
 	},

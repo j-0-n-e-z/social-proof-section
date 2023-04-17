@@ -1,19 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-	.card-stat-item {
-		@apply flex flex-col items-center lg:w-[50px] w-10;
+	.rate-container {
+		@apply flex items-center px-8 py-4 bg-lightGrayishMagenta rounded-xl w-[80%];
 	}
 
-	.card-state-item--heading {
-		@apply font-bold text-lg text-veryDarkDesaturatedBlue;
+	.rate-container__icons {
+		@apply flex gap-x-2 mr-8;
 	}
 
-	.card-stat-item--title {
-		@apply text-darkGray text-[12px] tracking-wider;
+	.rate-container__heading {
+		@apply font-bold text-[17px] text-veryDarkMagenta;
+	}
+
+	.star {
+		@apply w-[16px] h-[17px];
+	}
+
+	.review-container {
+		@apply bg-veryDarkMagenta h-[90%] px-8 py-9 space-y-4 rounded-lg w-[32%];
+	}
+
+	.review-container__heading {
+		@apply flex gap-x-6;
+	}
+
+	.review-container__heading__avatar {
+		@apply w-10 h-10 rounded-full;
+	}
+
+	.review-container__heading__title {
+		@apply flex flex-col;
+	}
+
+	.review-container__heading__title > h3 {
+		@apply text-white font-medium text-[17px];
+	}
+
+	.review-container__heading__title > span {
+		@apply text-softPink text-[17px] tracking-tight -mt-1;
+	}
+
+	.review-container__quote {
+		@apply text-white text-[15px] leading-[1.4rem] tracking-wider;
 	}
 }
