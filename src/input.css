@@ -4,11 +4,11 @@
 
 @layer components {
 	.rate-container {
-		@apply flex items-center px-8 py-4 bg-lightGrayishMagenta rounded-xl w-[80%];
+		@apply flex lg:flex-row flex-col gap-y-3 items-center px-8 lg:py-4 py-3 bg-lightGrayishMagenta rounded-xl lg:w-[80%] w-full;
 	}
 
 	.rate-container__icons {
-		@apply flex gap-x-2 mr-8;
+		@apply flex gap-x-2 lg:mr-8;
 	}
 
 	.rate-container__heading {
@@ -20,7 +20,7 @@
 	}
 
 	.review-container {
-		@apply bg-veryDarkMagenta h-[90%] px-8 py-9 space-y-4 rounded-lg w-[32%];
+		@apply bg-veryDarkMagenta lg:h-[90%] px-8 py-9 space-y-4 rounded-lg lg:w-[350px] w-full;
 	}
 
 	.review-container__heading {

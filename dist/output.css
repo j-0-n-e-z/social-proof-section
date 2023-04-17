@@ -518,22 +518,38 @@ video {
 
 .rate-container {
   display: flex;
-  width: 80%;
+  width: 100%;
+  flex-direction: column;
   align-items: center;
+  row-gap: 0.75rem;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: hsl(300 24% 96% / var(--tw-bg-opacity));
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+  .rate-container {
+    width: 80%;
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .rate-container__icons {
-  margin-right: 2rem;
   display: flex;
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .rate-container__icons {
+    margin-right: 2rem;
+  }
 }
 
 .rate-container__heading {
@@ -549,8 +565,7 @@ video {
 }
 
 .review-container {
-  height: 90%;
-  width: 32%;
+  width: 100%;
 }
 
 .review-container > :not([hidden]) ~ :not([hidden]) {
@@ -567,6 +582,13 @@ video {
   padding-right: 2rem;
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+}
+
+@media (min-width: 1024px) {
+  .review-container {
+    height: 90%;
+    width: 350px;
+  }
 }
 
 .review-container__heading {
@@ -623,20 +645,24 @@ video {
   margin-bottom: auto;
 }
 
-.mb-7 {
-  margin-bottom: 1.75rem;
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
-.mr-20 {
-  margin-right: 5rem;
+.mt-\[85px\] {
+  margin-top: 85px;
 }
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mb-\[85px\] {
+  margin-bottom: 85px;
 }
 
 .flex {
@@ -656,24 +682,16 @@ video {
   height: fit-content;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
-}
-
-.w-9\/12 {
-  width: 75%;
-}
-
-.w-\[1085px\] {
-  width: 1085px;
+.w-\[85\%\] {
+  width: 85%;
 }
 
 .w-full {
@@ -694,8 +712,8 @@ video {
   align-content: center;
 }
 
-.items-end {
-  align-items: flex-end;
+.items-center {
+  align-items: center;
 }
 
 .justify-between {
@@ -706,8 +724,12 @@ video {
   justify-items: center;
 }
 
-.gap-y-20 {
-  row-gap: 5rem;
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -728,16 +750,16 @@ video {
   background-repeat: no-repeat;
 }
 
-.pt-8 {
-  padding-top: 2rem;
+.text-center {
+  text-align: center;
 }
 
 .font-\[\'League_Spartan\'\] {
   font-family: 'League Spartan';
 }
 
-.text-\[54px\] {
-  font-size: 54px;
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .text-lg {
@@ -749,12 +771,16 @@ video {
   font-weight: 700;
 }
 
-.leading-6 {
-  line-height: 1.5rem;
+.font-medium {
+  font-weight: 500;
 }
 
-.leading-\[3\.1rem\] {
-  line-height: 3.1rem;
+.leading-8 {
+  line-height: 2rem;
+}
+
+.leading-\[1\.6rem\] {
+  line-height: 1.6rem;
 }
 
 .tracking-tight {
@@ -769,4 +795,94 @@ video {
 .text-veryDarkMagenta {
   --tw-text-opacity: 1;
   color: hsl(300 43% 22% / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .lg\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
+  .lg\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .lg\:mr-20 {
+    margin-right: 5rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:h-64 {
+    height: 16rem;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:w-9\/12 {
+    width: 75%;
+  }
+
+  .lg\:w-\[1085px\] {
+    width: 1085px;
+  }
+
+  .lg\:w-\[1185px\] {
+    width: 1185px;
+  }
+
+  .lg\:w-\[1100px\] {
+    width: 1100px;
+  }
+
+  .lg\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:items-end {
+    align-items: flex-end;
+  }
+
+  .lg\:gap-y-20 {
+    row-gap: 5rem;
+  }
+
+  .lg\:text-start {
+    text-align: start;
+  }
+
+  .lg\:text-\[19px\] {
+    font-size: 19px;
+  }
+
+  .lg\:text-\[54px\] {
+    font-size: 54px;
+  }
+
+  .lg\:leading-6 {
+    line-height: 1.5rem;
+  }
+
+  .lg\:leading-\[3\.1rem\] {
+    line-height: 3.1rem;
+  }
 }
