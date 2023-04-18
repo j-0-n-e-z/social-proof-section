@@ -9,9 +9,6 @@ module.exports = {
 				darkGrayishMagenta: 'hsl(303, 10%, 53%)',
 				lightGrayishMagenta: 'hsl(300, 24%, 96%)'
 			},
-			fontSize: {
-				base: '15px'
-			},
 			backgroundImage: {
 				patternBackground:
 					'url(./assets/images/bg-pattern-top-desktop.svg), url(./assets/images/bg-pattern-bottom-desktop.svg)'
